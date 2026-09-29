@@ -18,6 +18,12 @@ Practice the questions at https://danpune.github.io/greencard-checklist/civics.h
    "Start Screen Saver when inactive" shorter than "Turn display off".
 
 Step 3 is needed once. The screensaver is not signed with a paid Apple developer account.
+If you are comfortable with Terminal, this does the same as step 3, before you double-click the file:
+
+```bash
+xattr -dr com.apple.quarantine ~/Downloads/"Civics Test.saver"
+```
+
 Needs macOS 13 or later. Works on Apple silicon and Intel Macs.
 
 To remove it, delete `Civics Test.saver` from `~/Library/Screen Savers`.
