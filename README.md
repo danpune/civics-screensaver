@@ -11,7 +11,11 @@ Practice the questions at https://danpune.github.io/greencard-checklist/civics.h
 1. Download `Civics-Test-screensaver.zip` from the [latest release](https://github.com/danpune/civics-screensaver/releases/latest) and open it.
 2. Double-click `Civics Test.saver`. macOS asks whether to install it for you or for all users.
 3. macOS will say it cannot check the screensaver. Open **System Settings → Privacy & Security**, scroll down, and press **Open Anyway**.
-4. Open **System Settings → Screen Saver**, scroll to **Other**, and choose **Civics Test**.
+4. Choose it as your screen saver:
+   - **macOS 26 or later:** System Settings → **Wallpaper** → **Screen Saver…** → scroll to the last group, **Other** → **Show All** → **Civics Test**.
+   - **macOS 13 to 15:** System Settings → **Screen Saver** → scroll to **Other** → **Civics Test**.
+5. If System Settings says the display sleeps before the screen saver starts, open **Lock Screen** and make
+   "Start Screen Saver when inactive" shorter than "Turn display off".
 
 Step 3 is needed once. The screensaver is not signed with a paid Apple developer account.
 Needs macOS 13 or later. Works on Apple silicon and Intel Macs.
@@ -42,6 +46,7 @@ Needs the Xcode Command Line Tools, Python 3 with Pillow, and a copy of
 ./build.sh            # writes build/Civics Test.saver
 ./build.sh install    # builds and copies it to ~/Library/Screen Savers
 ./build.sh zip        # builds and zips it for a release
+swift Tools/preview.swift "build/Civics Test.saver"   # shows it full screen without changing any setting
 ```
 
 - `slides.html` is the design. `make_slides.py` fills it with the questions and the pictures and writes `web/`.

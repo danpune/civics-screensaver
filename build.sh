@@ -3,6 +3,7 @@
 #   ./build.sh            build into build/
 #   ./build.sh install    build, then copy it to ~/Library/Screen Savers
 #   ./build.sh zip        build, then zip it for a GitHub release
+#   ./build.sh zip install   both
 set -euo pipefail
 cd "${0:A:h}"
 
@@ -47,12 +48,12 @@ PLIST
 codesign --force --sign - "$OUT"
 echo "Built $OUT"
 
-if [[ "${1:-}" == "zip" ]]; then
+if [[ " $* " == *" zip "* ]]; then
   ditto -c -k --keepParent "$OUT" "build/Civics-Test-screensaver.zip"
   shasum -a 256 "build/Civics-Test-screensaver.zip"
 fi
 
-if [[ "${1:-}" == "install" ]]; then
+if [[ " $* " == *" install "* ]]; then
   mkdir -p "$HOME/Library/Screen Savers"
   rm -rf "$HOME/Library/Screen Savers/$NAME.saver"
   cp -R "$OUT" "$HOME/Library/Screen Savers/"
