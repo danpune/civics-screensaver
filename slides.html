@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Civics Test: questions and answers</title>
+<style>
+/* One unit, --u, scales everything: 1% of the width on a 16:9 screen, less on a squarer one. */
+:root{
+  --u:min(1vw,1.78vh);
+  --bg:#0b1d36; --ink:#f6f3ea; --muted:rgba(246,243,234,.6); --faint:rgba(246,243,234,.4);
+  --gold:#f0c766; --line:rgba(246,243,234,.16);
+  --serif:ui-serif,"New York","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);overflow:hidden;cursor:none}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+.stage{position:fixed;inset:0;background:radial-gradient(120vw 100vh at 18% 8%,#17365f 0%,#0b1d36 52%,#07142a 100%)}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:4.2vw 6vw 5vw;padding:calc(min(1vw,1.78vh)*4.2) calc(min(1vw,1.78vh)*6) calc(min(1vw,1.78vh)*5.4);opacity:0;transition:opacity .9s ease}
+.slide.on{opacity:1}
+
+.top{--u:min(1vw,1.78vh);display:flex;justify-content:space-between;align-items:center;gap:calc(var(--u)*2);font-size:calc(var(--u)*1.25);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.top b{color:var(--gold);font-weight:700}
+.chip{border:1px solid var(--line);border-radius:99px;padding:.35em .9em;letter-spacing:.08em;white-space:nowrap}
+
+.mid{flex:1;display:flex;align-items:center;min-height:0;margin-top:calc(min(1vw,1.78vh)*2)}
+.q{font-family:var(--serif);font-weight:600;font-size:calc(var(--u)*5.4);line-height:1.14;letter-spacing:-.01em;margin:0;max-width:17em;text-wrap:balance}
+.q.m{font-size:calc(var(--u)*4.5)}
+.q.l{font-size:calc(var(--u)*3.8)}
+
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:calc(var(--u)*5);align-items:center;width:100%}
+.two.solo{grid-template-columns:1fr;max-width:calc(var(--u)*64)}
+.qs{font-family:var(--serif);font-size:calc(var(--u)*2.1);line-height:1.3;color:var(--muted);margin:0 0 calc(var(--u)*2.2)}
+.lab{font-size:calc(var(--u)*1.15);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 calc(var(--u)*.9)}
+.ans{list-style:none;margin:0;padding:0;font-weight:650;font-size:calc(var(--u)*3.7);line-height:1.18;letter-spacing:-.005em;text-wrap:balance}
+.ans li+li{margin-top:calc(var(--u)*.7)}
+.ans.n2{font-size:calc(var(--u)*3.1)}
+.ans.n3{font-size:calc(var(--u)*2.6)}
+.ans.n4{font-size:calc(var(--u)*2.25)}
+.ans.long{font-size:calc(var(--u)*2.4)}
+.more{font-size:calc(var(--u)*1.35);color:var(--muted);margin:calc(var(--u)*1.1) 0 0}
+.why{font-size:calc(var(--u)*1.62);line-height:1.5;color:rgba(246,243,234,.86);margin:calc(var(--u)*2.6) 0 0;padding-left:calc(var(--u)*1.4);border-left:calc(var(--u)*.22) solid var(--gold);max-width:34em}
+.note{font-size:calc(var(--u)*1.35);line-height:1.45;color:var(--muted);margin:calc(var(--u)*1.2) 0 0;max-width:36em}
+
+figure{margin:0;display:flex;flex-direction:column;align-items:center;min-width:0}
+.pic{border-radius:calc(var(--u)*1.1);overflow:hidden;box-shadow:0 calc(var(--u)*1.6) calc(var(--u)*4.5) rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08);line-height:0;background:#0006}
+.pic img{display:block;max-width:100%;max-height:62vh;width:auto;height:auto;transform:scale(1.001);animation:drift 20s ease-out forwards}
+@keyframes drift{to{transform:scale(1.06)}}
+figcaption{font-size:calc(var(--u)*1.08);line-height:1.4;color:var(--muted);margin-top:calc(var(--u)*1.2);text-align:center;max-width:32em}
+figcaption i{display:block;font-style:normal;color:var(--faint)}
+
+.foot{position:fixed;left:calc(var(--u)*6);right:calc(var(--u)*6);bottom:calc(var(--u)*1.9);display:flex;justify-content:space-between;gap:calc(var(--u)*2);font-size:calc(var(--u)*.98);color:var(--faint);letter-spacing:.03em}
+.bar{position:fixed;left:0;bottom:0;height:calc(var(--u)*.32);width:0;background:var(--gold);opacity:.75}
+
+/* a tall screen, or a phone held upright: picture under the text */
+@media (max-aspect-ratio:1/1){
+  :root{--u:min(1.9vw,1.1vh)}
+  .two{grid-template-columns:1fr;gap:calc(var(--u)*3)}
+  .pic img{max-height:34vh}
+}
+@media (prefers-reduced-motion:reduce){.pic img{animation:none}.slide{transition:none}}
+</style>
+</head>
+<body>
+<div class="stage" id="stage"></div>
+<div class="foot"><span>Unofficial study aid, not made by USCIS. Questions and answers: USCIS form M-1778 (09/25).</span><span>danpune.github.io/greencard-checklist</span></div>
+<div class="bar" id="bar"></div>
+<script>
+(function(){
+  var D = /*DATA*/;   // written by make_slides.py: one entry per question, in the official order
+
+  var QUESTION = 5000;                                  // the question alone, in milliseconds
+  function answerTime(s){                               // longer answers stay longer
+    var words = (s.a.join(' ') + ' ' + (s.why || '') + ' ' + (s.note || '')).split(/\s+/).length;
+    return Math.max(8000, Math.min(16000, 5000 + words * 260));
+  }
+
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function shuffle(a){ for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+  function top(s, n){
+    var t = el('div', 'top'), l = el('span');
+    l.appendChild(el('b', '', 'Question ' + s.id)); l.appendChild(document.createTextNode('  ·  ' + s.sec));
+    t.appendChild(l);
+    if (s.star) t.appendChild(el('span', 'chip', '★ 65/20 list'));
+    return t;
+  }
+  function question(s){
+    var v = el('div', 'slide'), mid = el('div', 'mid');
+    v.appendChild(top(s));
+    mid.appendChild(el('p', 'q' + (s.q.length > 110 ? ' l' : s.q.length > 70 ? ' m' : ''), s.q));
+    v.appendChild(mid);
+    return v;
+  }
+  function answer(s){
+    var v = el('div', 'slide'), mid = el('div', 'mid'), two = el('div', 'two' + (s.img ? '' : ' solo')), left = el('div');
+    v.appendChild(top(s));
+    left.appendChild(el('p', 'qs', s.q));
+    left.appendChild(el('p', 'lab', s.need > 1 ? 'Answers. Name ' + ['', '', 'two', 'three', '', 'five'][s.need] : s.a.length > 1 ? 'Answer. Any one of these' : 'Answer'));
+    var longest = Math.max.apply(null, s.a.map(function(a){ return a.length; }));
+    var ul = el('ul', 'ans' + (longest > 60 ? ' long' : s.a.length > 4 ? ' n4' : s.a.length > 3 ? ' n3' : s.a.length > 1 ? ' n2' : ''));
+    s.a.forEach(function(a){ ul.appendChild(el('li', '', a)); });
+    left.appendChild(ul);
+    if (s.more) left.appendChild(el('p', 'more', 'and ' + s.more + ' more accepted answer' + (s.more === 1 ? '' : 's')));
+    if (s.note) left.appendChild(el('p', 'note', s.note));
+    if (s.why) left.appendChild(el('p', 'why', s.why));
+    two.appendChild(left);
+    if (s.img) {
+      var f = el('figure'), p = el('div', 'pic'), im = el('img'), c = el('figcaption');
+      im.onload = function(){ fit(v); };                 // fit again once the picture has its size
+      im.src = s.img.src; im.alt = s.img.caption;
+      p.appendChild(im); f.appendChild(p);
+      c.appendChild(document.createTextNode(s.img.caption));
+      c.appendChild(el('i', '', s.img.credit));
+      f.appendChild(c); two.appendChild(f);
+    }
+    mid.appendChild(two); v.appendChild(mid);
+    return v;
+  }
+
+  var stage = document.getElementById('stage'), bar = document.getElementById('bar');
+  var order = [], at = 0, side = 1, now = null;
+  // A slide with a lot of text is made a little smaller, step by step, until it fits.
+  function fit(v){
+    var mid = v.querySelector('.mid'), box = mid.firstChild;
+    for (var k = 0.94; box.offsetHeight > mid.clientHeight && k > 0.55; k -= 0.06) v.style.setProperty('--u', 'calc(min(1vw,1.78vh)*' + k.toFixed(2) + ')');
+  }
+  function show(v, ms){
+    stage.appendChild(v);
+    fit(v);
+    v.offsetWidth;                                      // so the fade starts from 0
+    v.classList.add('on');
+    var old = now; now = v;
+    if (old) { old.classList.remove('on'); setTimeout(function(){ old.remove(); }, 1000); }
+    bar.style.transition = 'none'; bar.style.width = '0'; bar.offsetWidth;
+    bar.style.transition = 'width ' + ms + 'ms linear'; bar.style.width = '100%';
+    setTimeout(step, ms);
+  }
+  function step(){
+    if (side === 0) { side = 1; show(answer(order[at]), answerTime(order[at])); return; }
+    at++;
+    if (at >= order.length || !order.length) { order = shuffle(D.slice()); at = 0; }
+    side = 0;
+    var s = order[at];
+    if (s.img) new Image().src = s.img.src;             // have the picture ready before the answer shows
+    show(question(s), QUESTION);
+  }
+  // ?q=12 shows one question, ?q=12&side=a its answer, and stays there: for checking a slide
+  var pin = /[?&]q=(\d+)/.exec(location.search);
+  if (pin) {
+    var one = D.filter(function(s){ return s.id === +pin[1]; })[0] || D[0];
+    var v = stage.appendChild(/side=a/.test(location.search) ? answer(one) : question(one));
+    v.style.transition = 'none'; fit(v); v.classList.add('on');
+  } else step();
+
+  // The four names that change with elections and appointments: take the current ones when there is a connection.
+  if (window.fetch) fetch('https://danpune.github.io/greencard-checklist/officials.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(o){
+    var f = o && o.parts && o.parts.federal;
+    if (f) D.forEach(function(s){ var a = f[s.id]; if (a && a[0] && typeof a[0] === 'string' && a[0].length < 60) s.a = [a[0]]; });
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>
