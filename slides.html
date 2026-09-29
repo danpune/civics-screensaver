@@ -129,10 +129,14 @@ figcaption i{display:block;font-style:normal;color:var(--faint)}
   function show(v, ms){
     stage.appendChild(v);
     fit(v);
+    // The fade is a nicety. When the page counts as hidden, fades do not run, so the slide is shown without one,
+    // and after a second it is shown in any case.
+    if (document.hidden) v.style.transition = 'none';
     v.offsetWidth;                                      // so the fade starts from 0
     v.classList.add('on');
+    setTimeout(function(){ v.style.transition = 'none'; }, 1000);
     var old = now; now = v;
-    if (old) { old.classList.remove('on'); setTimeout(function(){ old.remove(); }, 1000); }
+    if (old) { old.style.transition = document.hidden ? 'none' : ''; old.offsetWidth; old.classList.remove('on'); setTimeout(function(){ old.remove(); }, 1000); }
     bar.style.transition = 'none'; bar.style.width = '0'; bar.offsetWidth;
     bar.style.transition = 'width ' + ms + 'ms linear'; bar.style.width = '100%';
     setTimeout(step, ms);
