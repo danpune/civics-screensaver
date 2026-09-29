@@ -24,6 +24,7 @@ mkdir -p "$OUT/Contents/MacOS" "$OUT/Contents/Resources"
 lipo -create "build/$EXE-arm64" "build/$EXE-x86_64" -output "$OUT/Contents/MacOS/$EXE"
 rm -f build/$EXE-arm64 build/$EXE-x86_64
 cp -R web "$OUT/Contents/Resources/web"
+cp Resources/thumbnail.png Resources/thumbnail@2x.png "$OUT/Contents/Resources/"   # the small picture in System Settings
 
 cat > "$OUT/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
