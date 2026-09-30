@@ -100,8 +100,8 @@ swift Tools/preview.swift "build/Civics Test.saver"   # shows it full screen wit
 - `Sources/CivicsSaverView.swift` shows that page full screen.
 - `swift Tools/page.swift "$PWD/web/index.html" "q=2&side=a" out.png` saves a picture of one slide.
 - `get_pictures.py` downloads the pictures listed in `picks.json` and writes `pictures.json` and `CREDITS.md`.
-- `python3 make_videos.py` makes study videos from the same slides, with a title, description and chapters for each, in
-  `videos/`. Their background sound is made by `Tools/video.swift` from simple tones and soft noise.
+- `python3 make_videos.py` makes study videos from the same slides in `videos/`, with each one's description and
+  `upload.html`, a sheet with every step and field for uploading them to YouTube. Their background sound is made by `Tools/video.swift` from simple tones and soft noise.
 
 ## Licence
 

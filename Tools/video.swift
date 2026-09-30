@@ -36,7 +36,7 @@ let full = CGRect(x: 0, y: 0, width: W, height: H)
 
 // A quiet, slow chord over soft noise, faded in and out.
 func writeSound(seconds: Double, to url: URL) throws {
-    let rate = 44100.0, n = Int(seconds * rate)
+    let rate = 48000.0, n = Int(seconds * rate)   // YouTube recommends 48 kHz
     let fmt = AVAudioFormat(standardFormatWithSampleRate: rate, channels: 2)!
     let file = try AVAudioFile(forWriting: url, settings: [AVFormatIDKey: kAudioFormatMPEG4AAC, AVSampleRateKey: rate, AVNumberOfChannelsKey: 2, AVEncoderBitRateKey: 128000])
     let notes: [Double] = [110.00, 164.81, 220.00, 277.18, 329.63]          // A major, low and wide
@@ -45,7 +45,7 @@ func writeSound(seconds: Double, to url: URL) throws {
     func noise() -> Double { seed = seed &* 6364136223846793005 &+ 1442695040888963407; return Double(seed >> 33) / Double(1 << 30) - 1 }
     var done = 0
     while done < n {
-        let count = min(44100, n - done)
+        let count = min(Int(rate), n - done)
         let buf = AVAudioPCMBuffer(pcmFormat: fmt, frameCapacity: AVAudioFrameCount(count))!
         buf.frameLength = AVAudioFrameCount(count)
         let L = buf.floatChannelData![0], R = buf.floatChannelData![1]
@@ -156,6 +156,7 @@ Task { @MainActor in
     try! mix.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid)!.insertTimeRange(span, of: try! await AVURLAsset(url: silent).loadTracks(withMediaType: .video)[0], at: .zero)
     try! mix.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid)!.insertTimeRange(span, of: try! await AVURLAsset(url: m4a).loadTracks(withMediaType: .audio)[0], at: .zero)
     guard let ex = AVAssetExportSession(asset: mix, presetName: AVAssetExportPresetPassthrough) else { fail("cannot join sound and picture") }
+    ex.shouldOptimizeForNetworkUse = true   // index at the start of the file ("fast start"), as YouTube recommends
     do { try await ex.export(to: out, as: .mp4) } catch { fail("not joined: \(error)") }
     for u in [silent, m4a] { try? FileManager.default.removeItem(at: u) }
     print("wrote \(out.lastPathComponent): \(Int(seconds)) seconds")
