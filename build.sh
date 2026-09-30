@@ -41,7 +41,7 @@ cat > "$OUT/Contents/Info.plist" <<PLIST
   <key>CFBundleVersion</key><string>$VERSION</string>
   <key>LSMinimumSystemVersion</key><string>$MIN_OS</string>
   <key>NSPrincipalClass</key><string>CivicsSaverView</string>
-  <key>NSHumanReadableCopyright</key><string>Unofficial study aid. Not made by USCIS. Not legal advice. Code: MIT licence. Pictures: public domain or CC0, see CREDITS.md.</string>
+  <key>NSHumanReadableCopyright</key><string>Unofficial study aid. Not made by USCIS. Not legal advice. Code: MIT licence. Pictures: public domain in the U.S. or CC0, see CREDITS.md.</string>
 </dict></plist>
 PLIST
 
@@ -50,7 +50,7 @@ codesign --force --sign - "$OUT"
 echo "Built $OUT"
 
 if [[ " $* " == *" zip "* ]]; then
-  ditto -c -k --keepParent "$OUT" "build/Civics-Test-screensaver.zip"
+  ditto -c -k --norsrc --keepParent "$OUT" "build/Civics-Test-screensaver.zip"   # no ._ files, so any unzip keeps the signature valid
   shasum -a 256 "build/Civics-Test-screensaver.zip"
 fi
 

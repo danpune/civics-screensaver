@@ -41,16 +41,17 @@ installed it for all users (macOS asks for an administrator password).
 
 ## What it shows
 
-- All 128 questions, from USCIS form M-1778 (09/25), in random order. Each answer slide shows up to four accepted
-  answers in the official order (five when the question asks for five) and says how many more are accepted. The full
-  list is in the official form: see [Sources](#sources).
+- All 128 questions, from USCIS M-1778 (09/25), 128 Civics Questions and Answers, in random order. Each answer slide
+  shows up to four accepted answers (five when the question asks for five), in the official order except that the
+  answer the picture shows comes first, and says how many more are accepted. The full list is in the official list:
+  see [Sources](#sources).
 - Questions that ask for two, three or five answers say so above the answers ("Name two").
 - A short "why" for each answer. These notes are not USCIS text: they were written for the practice site, based on
   the USCIS 2025 study guide (see [Sources](#sources)).
-- A picture for 127 of the 128 answers (117 different pictures). Every picture is public domain or CC0: see
-  [CREDITS.md](CREDITS.md).
+- A picture for 127 of the 128 answers (119 different pictures). Every picture is in the public domain in the United
+  States or released as CC0: see [CREDITS.md](CREDITS.md).
 - Four questions depend on where you live (senators, representative, governor, capital). The screensaver shows
-  "Answers will vary" for them, as the official list does. Look up your own on the practice page above.
+  "Answers will vary" for them, as the official list does, and points to the practice page, where you can find your own.
 - Four questions ask for the name of an office holder: the President, Vice President, Speaker of the House and Chief
   Justice. The slide shows every form of the name that USCIS accepts and the date the names were checked. When the Mac
   is online, the names are refreshed from the practice site, which checks the USCIS test updates page every day.
@@ -70,7 +71,7 @@ No cookie or identifier is sent. Offline, the screensaver works the same, with t
 
 - **Questions and accepted answers:** USCIS,
   [128 Civics Questions and Answers (2025 version)](https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf),
-  form M-1778 (09/25).
+  M-1778 (09/25).
 - **About the 2025 test:** USCIS,
   [2025 Civics Test](https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test).
 - **Names of the four office holders:** USCIS, [Check for Test Updates](https://www.uscis.gov/citizenship/testupdates).
@@ -79,7 +80,9 @@ No cookie or identifier is sent. Offline, the screensaver works the same, with t
   (PDF, 39 MB). For 23 of the 128, where the guide says nothing or is not exact, general history references were also
   used; those 23 are marked `"s": 1` in [why.json](https://github.com/danpune/greencard-checklist/blob/main/why.json).
 - **Pictures:** Wikimedia Commons. [CREDITS.md](CREDITS.md) gives each picture's credit, its licence, the reason it is
-  free to use, and a link to its source page.
+  free to use, and a link to its source page. A few older news photographs come from the Library of Congress's National
+  Photo Company and Harris & Ewing collections; for those, the Library states that there are no known restrictions on
+  publication.
 
 ## Build it yourself
 
@@ -97,13 +100,15 @@ swift Tools/preview.swift "build/Civics Test.saver"   # shows it full screen wit
 - `Sources/CivicsSaverView.swift` shows that page full screen.
 - `swift Tools/page.swift "$PWD/web/index.html" "q=2&side=a" out.png` saves a picture of one slide.
 - `get_pictures.py` downloads the pictures listed in `picks.json` and writes `pictures.json` and `CREDITS.md`.
+- `python3 make_videos.py` makes study videos from the same slides, with a title, description and chapters for each, in
+  `videos/`. Their background sound is made by `Tools/video.swift` from simple tones and soft noise.
 
 ## Licence
 
 The code is MIT licensed: see [LICENSE](LICENSE). The questions and answers are a work of the U.S. government (USCIS
-form M-1778) and are not under copyright in the United States
-([17 U.S.C. 105](https://www.law.cornell.edu/uscode/text/17/105)). The pictures are public domain or CC0: see
-[CREDITS.md](CREDITS.md). The explanations and picture captions were written for this project and its practice site.
+M-1778) and are not under copyright in the United States
+([17 U.S.C. 105](https://www.law.cornell.edu/uscode/text/17/105)). The pictures are in the public domain in the United States or released
+as CC0: see [CREDITS.md](CREDITS.md). The explanations and picture captions were written for this project and its practice site.
 
 Apple, Mac and macOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions. This project
 is not affiliated with, sponsored by or endorsed by Apple Inc.

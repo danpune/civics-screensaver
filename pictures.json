@@ -317,7 +317,8 @@
   "credit": "Carter White House, National Archives",
   "source": "https://commons.wikimedia.org/wiki/File:Anwar_Sadat_Jimmy_Carter_Menachem_Begin_sign_Camp_David_Accords-1978.jpg",
   "license": "Public domain",
-  "basis": "Taken by the Carter White House staff photographers on 17 September 1978 (National Archives 181393, Carter Library); a U.S. federal government work."
+  "basis": "Taken by the Carter White House staff photographers on 17 September 1978 (National Archives 181393, Carter Library); a U.S. federal government work.",
+  "answer": "Chief diplomat"
  },
  "42": {
   "file": "042.jpg",
@@ -417,7 +418,7 @@
  },
  "54": {
   "file": "054.jpg",
-  "caption": "The nine Supreme Court justices under Chief Justice Taft, late 1920s. Five sit in front.",
+  "caption": "The nine Supreme Court justices under Chief Justice Taft, between 1925 and 1930. Five sit in front.",
   "credit": "Harris & Ewing, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:1925_U.S._Supreme_Court_Justices.jpg",
   "license": "Public domain",
@@ -493,12 +494,12 @@
   "credit": "National Photo Company Collection, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Three_suffragists_casting_votes_in_New_York_City(%3F)_LCCN97510725.jpg",
   "license": "Public domain",
-  "basis": "News photograph of about 1917 from the National Photo Company, issued with a printed news caption, so published before 1930 and out of copyright; loc.gov item 97510725 says no known restrictions."
+  "basis": "Press print with a newspaper caption in the National Photo Company Collection, about 1917 (loc.gov item 97510725). The Library of Congress, which acquired the collection in 1947, states: \"There are no known restrictions on the photographs in the National Photo Company Collection.\" Publication before 1930 is likely but not proven; no printed copy has been found."
  },
  "64": {
   "file": "064.jpg",
   "caption": "The jury box in the Webster County Courthouse, Red Cloud, Nebraska.",
-  "credit": "Ammodramus, Wikimedia Commons, CC0",
+  "credit": "Ammodramus, Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Webster_County,_Nebraska_courthouse_courtroom_3.JPG",
   "license": "CC0",
   "basis": "Own photograph by Wikimedia Commons user Ammodramus, taken on 30 April 2013 and released by the author under CC0 (public domain dedication)."
@@ -533,7 +534,7 @@
   "credit": "National Photo Company, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Americanization_class_LCCN2016852098.jpg",
   "license": "Public domain",
-  "basis": "Photograph by the National Photo Company, dated about 1920 by the Library of Congress (https://www.loc.gov/item/2016852098/), which lists no known restrictions on publication; published before 1930, so its copyright has expired."
+  "basis": "Glass negative in the National Photo Company Collection, dated about 1920 by the Library of Congress (loc.gov item 2016852098). The Library acquired the company's files in 1947 and states: \"There are no known restrictions on the photographs in the National Photo Company Collection.\" No publication before 1930 is documented for this photo."
  },
  "69": {
   "file": "069.jpg",
@@ -541,7 +542,7 @@
   "credit": "National Photo Company Collection, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Three_suffragists_casting_votes_in_New_York_City(%3F)_LCCN97510725.jpg",
   "license": "Public domain",
-  "basis": "News agency print in the National Photo Company Collection, dated about 1917 by the Library of Congress and carrying a press caption, so its U.S. copyright has expired (published before 1930); the Library lists no known restrictions on publication."
+  "basis": "Press print with a newspaper caption in the National Photo Company Collection, about 1917 (loc.gov item 97510725). The Library of Congress, which acquired the collection in 1947, states: \"There are no known restrictions on the photographs in the National Photo Company Collection.\" Publication before 1930 is likely but not proven; no printed copy has been found."
  },
  "70": {
   "file": "070.jpg",
@@ -605,7 +606,8 @@
   "credit": "Photo by Daderot, public domain",
   "source": "https://commons.wikimedia.org/wiki/File:Teapot_celebrating_repeal_of_the_Stamp_Act.jpg",
   "license": "Public domain",
-  "basis": "Photo taken in 2011 by Commons user Daderot, who released it into the public domain (PD-self); the teapot itself dates from 1766-1770."
+  "basis": "Photo taken in 2011 by Commons user Daderot, who released it into the public domain (PD-self); the teapot itself dates from 1766-1770.",
+  "answer": "Stamp Act"
  },
  "78": {
   "file": "078.jpg",
@@ -629,11 +631,12 @@
   "credit": "Architect of the Capitol",
   "source": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg",
   "license": "Public domain",
-  "basis": "Painted by John Trumbull (died 1843) in 1820 for the U.S. Capitol and hung in the Rotunda in 1826, so copyright has expired; photo from the Architect of the Capitol."
+  "basis": "Painted by John Trumbull (died 1843) in 1820 for the U.S. Capitol and hung in the Rotunda in 1826, so copyright has expired; photo from the Architect of the Capitol.",
+  "answer": "(Battle of) Yorktown (British surrender at Yorktown)"
  },
  "81": {
   "file": "081.jpg",
-  "caption": "School map from 1919: the thirteen colonies line the Atlantic coast north of Florida.",
+  "caption": "The thirteen colonies in 1774, on a 1919 school map.",
   "credit": "Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:The_Thirteen_Original_Colonies_in_1774_(McConnell%27s_historical_maps_of_the_United_States).jpg",
   "license": "Public domain",
@@ -669,7 +672,8 @@
   "credit": "National Portrait Gallery, Smithsonian",
   "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Franklin_by_Joseph_Duplessis_1778.jpg",
   "license": "Public domain",
-  "basis": "Painted by Joseph Siffred Duplessis (died 1802) about 1785, so copyright expired long ago; reproduction from the National Portrait Gallery, Smithsonian, which also marks it CC0."
+  "basis": "Painted by Joseph Siffred Duplessis (died 1802) about 1785, so copyright expired long ago; reproduction from the National Portrait Gallery, Smithsonian, which also marks it CC0.",
+  "answer": "U.S. diplomat"
  },
  "86": {
   "file": "086.jpg",
@@ -681,11 +685,11 @@
  },
  "87": {
   "file": "087.jpg",
-  "caption": "Thomas Jefferson, painted by Rembrandt Peale in 1800.",
-  "credit": "Rembrandt Peale, White House collection",
-  "source": "https://commons.wikimedia.org/wiki/File:Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg",
+  "caption": "Thomas Jefferson, the third president, painted by Gilbert Stuart.",
+  "credit": "Gilbert Stuart, National Portrait Gallery and Monticello",
+  "source": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_-_Thomas_Jefferson_-_Google_Art_Project.jpg",
   "license": "Public domain",
-  "basis": "Painted by Rembrandt Peale (died 1860) in 1800, so copyright has expired in the United States; this is a faithful photo of that flat painting, which hangs in the White House collection."
+  "basis": "Painted by Gilbert Stuart (died 1828) in the early 1800s, so copyright expired long ago; a faithful photograph of the flat painting (Google Art Project). The painting is owned by the National Portrait Gallery, Smithsonian, and Monticello."
  },
  "88": {
   "file": "088.jpg",
@@ -697,11 +701,12 @@
  },
  "89": {
   "file": "089.jpg",
-  "caption": "Alexander Hamilton, painted by John Trumbull about 1805.",
-  "credit": "John Trumbull, White House collection",
-  "source": "https://commons.wikimedia.org/wiki/File:Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg",
+  "caption": "The First Bank of the United States in Philadelphia, which Hamilton helped establish.",
+  "credit": "Carol M. Highsmith, Library of Congress",
+  "source": "https://commons.wikimedia.org/wiki/File:First_Bank_of_the_United_States,_Philadelphia,_Pennsylvania_LCCN2011633532_(edited).jpg",
   "license": "Public domain",
-  "basis": "Painted by John Trumbull (died 1843) about 1805, so copyright has expired in the United States; this is a faithful photo of that flat painting in the White House collection."
+  "basis": "Photograph by Carol M. Highsmith, between 1980 and 2006, from the archive she gave to the Library of Congress (item 2011633532), which states no known restrictions on publication; Highsmith dedicated the archive to the public.",
+  "answer": "Helped establish the First Bank of the United States"
  },
  "90": {
   "file": "090.jpg",
@@ -733,7 +738,8 @@
   "credit": "Smithsonian American Art Museum",
   "source": "https://commons.wikimedia.org/wiki/File:Lee_Surrendering_to_Grant_at_Appomattox_SAAM-1981.139_1.jpg",
   "license": "CC0",
-  "basis": "Painted by Alonzo Chappel about 1870, so copyright has expired; the Smithsonian American Art Museum released this image as CC0 in its Open Access collection."
+  "basis": "Painted by Alonzo Chappel about 1870, so copyright has expired; the Smithsonian American Art Museum released this image as CC0 in its Open Access collection.",
+  "answer": "(Surrender at) Appomattox"
  },
  "94": {
   "file": "094.jpg",
@@ -925,7 +931,8 @@
   "credit": "Ansel Adams / National Archives",
   "source": "https://commons.wikimedia.org/wiki/File:Ansel_Adams_-_National_Archives_79-AA-Q02.jpg",
   "license": "Public domain",
-  "basis": "Taken in 1941 by Ansel Adams under a National Park Service commission for the Department of the Interior mural project; National Archives record 519984 lists use as Unrestricted and the Archives states this series is in the public domain."
+  "basis": "Taken in 1941 by Ansel Adams under a National Park Service commission for the Department of the Interior mural project; National Archives record 519984 lists use as Unrestricted and the Archives states this series is in the public domain.",
+  "answer": "Pueblo"
  },
  "118": {
   "file": "118.jpg",
@@ -933,7 +940,8 @@
   "credit": "NASA",
   "source": "https://commons.wikimedia.org/wiki/File:Buzz_salutes_the_U.S._Flag.jpg",
   "license": "Public domain",
-  "basis": "NASA photo AS11-40-5874, taken on the Moon on 20 July 1969 by astronaut Neil Armstrong as part of the Apollo 11 mission, so it is a federal work in the public domain (PD-USGov-NASA)."
+  "basis": "NASA photo AS11-40-5874, taken on the Moon on 20 July 1969 by astronaut Neil Armstrong as part of the Apollo 11 mission, so it is a federal work in the public domain (PD-USGov-NASA).",
+  "answer": "Landing on the moon"
  },
  "119": {
   "file": "119.jpg",
@@ -948,7 +956,7 @@
   "caption": "The Statue of Liberty on Liberty Island in New York Harbor, with Manhattan behind.",
   "credit": "Carol M. Highsmith, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:HIghsmith_2017_LOC_Statue_of_Liberty_NY_Harbor.jpg",
-  "license": "CC0",
+  "license": "Public domain",
   "basis": "Photographed on 24 August 2017 by Carol M. Highsmith and given to the Library of Congress with the rights dedicated to the public (LOC highsm.45303, no known restrictions on publication), so it is dedicated to the public domain by the author."
  },
  "121": {
@@ -965,7 +973,7 @@
   "credit": "NASA / Ben Smegelsky",
   "source": "https://commons.wikimedia.org/wiki/File:VAB_-_American_Flag_and_NASA_Meatball_Painting_Complete_(KSC-20201027-PH-JBS02_0072).jpg",
   "license": "Public domain",
-  "basis": "NASA photograph by Ben Smegelsky, Kennedy Space Center, 27 October 2020 (NASA ID KSC-20201027-PH-JBS02_0072), a work of the U.S. federal government."
+  "basis": "NASA photograph KSC-20201027-PH-JBS02_0072, credited \"NASA/Ben Smegelsky\", taken 27 October 2020 at Kennedy Space Center and released by NASA. The photographer may be a NASA contractor, so this is not claimed as a federal-employee work under 17 U.S.C. 105. NASA names no other copyright holder on it, and NASA's media guidelines (https://www.nasa.gov/nasa-brand-center/images-and-media/) state that NASA images \"generally are not subject to copyright in the United States\"."
  },
  "123": {
   "file": "123.png",
@@ -997,7 +1005,8 @@
   "credit": "National Gallery of Art",
   "source": "https://commons.wikimedia.org/wiki/File:John_Schutler_after_George_Henry_Durrie,_Home_to_Thanksgiving,_1867,_NGA_66577.jpg",
   "license": "Public domain",
-  "basis": "Hand-colored lithograph after a painting by George Henry Durrie (died 1863), published by Currier and Ives in New York in 1867, so its U.S. copyright has expired; the National Gallery of Art gave the scan to Commons as CC0."
+  "basis": "Hand-colored lithograph after a painting by George Henry Durrie (died 1863), published by Currier and Ives in New York in 1867, so its U.S. copyright has expired; the National Gallery of Art gave the scan to Commons as CC0.",
+  "answer": "Thanksgiving Day"
  },
  "127": {
   "file": "127.jpg",

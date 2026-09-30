@@ -4,20 +4,20 @@
   python3 get_pictures.py picks.json
 
 picks.json is a list of pictures, one per question: id, found, file_title, page_url, image_url, license, basis,
-credit, caption. Every picture is public domain or CC0; the licence of each was checked before it got here (notes in "checked").
+credit, caption, and optionally crop and answer (the accepted answer the picture shows). The licence of each was checked
+before it got here (notes in "checked").
 Stdlib only. A picture that is already in pictures/ is not downloaded again.
 """
 import json, os, sys, time, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 UA = {"User-Agent": "civics-study-aid/1.0 (https://danpune.github.io/greencard-checklist/)"}
-OK = ("public domain", "pd", "cc0")   # how a free licence is spelled on Wikimedia Commons
 
 picks = [p for p in json.load(open(sys.argv[1], encoding="utf-8")) if p.get("found")]
 os.makedirs(os.path.join(HERE, "pictures"), exist_ok=True)
 manifest, credits = {}, []
 for p in sorted(picks, key=lambda p: p["id"]):
-    assert any(w in p["license"].lower() for w in OK), "question %s: licence %r is not free" % (p["id"], p["license"])
+    assert p["license"] in ("Public domain", "CC0"), "question %s: licence %r is not free" % (p["id"], p["license"])
     assert p["image_url"].startswith(("https://upload.wikimedia.org/", "https://thumb.wikimedia.org/")), p["image_url"]
     ext = ".png" if p["image_url"].lower().split("?")[0].endswith(".png") else ".jpg"
     name = "%03d%s" % (p["id"], ext)
@@ -27,20 +27,25 @@ for p in sorted(picks, key=lambda p: p["id"]):
             data = r.read()
         assert len(data) > 20000, "question %s: the download is too small to be a picture" % p["id"]
         open(path, "wb").write(data)
-        if p.get("crop"):   # left, top, right, bottom in pixels of the downloaded copy: cuts off the edge of a glass negative
+        if p.get("crop"):   # left, top, right, bottom in pixels of the downloaded copy
             from PIL import Image
             Image.open(path).convert("RGB").crop(p["crop"]).save(path, quality=92)
         time.sleep(1)   # be gentle with Wikimedia's servers
     manifest[str(p["id"])] = {"file": name, "caption": p["caption"], "credit": p["credit"],
                               "source": p["page_url"], "license": p["license"], "basis": p["basis"]}
+    if p.get("answer"):
+        manifest[str(p["id"])]["answer"] = p["answer"]
     credits.append("| %d | %s | %s | %s | %s | [file page](%s) |" % (p["id"], p["caption"], p["credit"], p["license"], p["basis"], p["page_url"]))
 
 json.dump(manifest, open(os.path.join(HERE, "pictures.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 open(os.path.join(HERE, "CREDITS.md"), "w", encoding="utf-8").write(
-    "# Picture credits\n\nEvery picture is in the public domain or released as CC0. Each was found on Wikimedia Commons, and its "
+    "# Picture credits\n\nEvery picture is in the public domain in the United States or released as CC0. Each was found on Wikimedia Commons, and its "
     "licence record there was checked before the picture was added. The notes of each check are in picks.json (field \"checked\"). "
     "The checks were made with automated tools; this is a careful check, not a legal opinion. Where a Commons page shows a different "
     "date, author or licence tag, this list follows the record of the archive that holds the original.\n\n"
+    "Some older news photographs come from the Library of Congress's National Photo Company and Harris & Ewing collections. "
+    "For those, the Library states that there are no known restrictions on publication; where a photo's publication before 1930 "
+    "is not documented, the \"Why it is free\" column says so.\n\n"
     "Pictures credited to the Architect of the Capitol are in the public domain; the agency says so itself: \"These images are in "
     "the public domain\" (https://www.aoc.gov/image-terms). The agency asks that they not be used for advertising or to imply "
     "endorsement. This free study aid is not endorsed by the Architect of the Capitol or the United States Congress.\n\n"

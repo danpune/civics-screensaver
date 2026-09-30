@@ -21,6 +21,7 @@ questions, why, officials = load("questions.json"), load("why.json")["why"], loa
 federal = officials["parts"]["federal"]   # the names that change: questions 30, 38, 39 and 57
 day = date.fromisoformat(officials["changed"])
 CHECKED = "Names from uscis.gov/citizenship/testupdates, checked %s %d, %d." % (day.strftime("%b"), day.day, day.year)
+FIND = " Find your own answer at danpune.github.io/greencard-checklist/civics.html"   # the four answers that depend on where you live
 pictures = json.load(open(os.path.join(HERE, "pictures.json"), encoding="utf-8"))
 
 def need(q):   # how many answers the question asks for, as on the site
@@ -35,12 +36,17 @@ slides = []
 for q in questions:
     i, n = str(q["id"]), need(q["q"])
     answers = federal[i] if i in federal else q["a"]   # every form of the name that USCIS accepts
+    pa = pictures.get(i, {}).get("answer")   # the accepted answer the picture shows is listed first
+    if pa:
+        assert pa in answers, (i, pa)
+        answers = [pa] + [a for a in answers if a != pa]
     shown = answers[:max(n, 4)]
     s = {"id": q["id"], "sec": q["sec"], "star": bool(q.get("star")), "q": q["q"], "need": n,
-         "a": shown, "more": len(answers) - len(shown), "note": CHECKED if i in federal else q.get("note", ""), "why": why[i]["w"]}
+         "a": shown, "more": len(answers) - len(shown), "note": CHECKED if i in federal else (q.get("note", "") + FIND if q["id"] in (23, 29, 61, 62) else q.get("note", "")), "why": why[i]["w"]}
     p = pictures.get(i)
     if p:
-        im = Image.open(os.path.join(HERE, "pictures", p["file"])).convert("RGB")
+        im = Image.open(os.path.join(HERE, "pictures", p["file"])).convert("RGBA")
+        bg = Image.new("RGB", im.size, (11, 29, 54)); bg.paste(im, mask=im.getchannel("A")); im = bg   # transparent edges take the page colour
         im.thumbnail((WIDE, WIDE), Image.LANCZOS)
         im.save(os.path.join(out, "img", i + ".jpg"), quality=80, optimize=True, progressive=True)
         s["img"] = {"src": "img/%s.jpg" % i, "caption": p["caption"], "credit": p["credit"]}

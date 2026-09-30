@@ -694,7 +694,8 @@
   "caption": "President Carter with Egypt's Sadat and Israel's Begin after signing the Camp David Accords, 1978.",
   "fits": "Shows the accepted answer 'chief diplomat': a President bringing two foreign leaders to an agreement. It differs from questions 42 to 45, which show the other powers. All three men are deceased.",
   "problem": "",
-  "checked": "API: LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Restrictions empty, Artist 'Not know or unknown', Credit NARA, 17 September 1978, 2256x1482 JPEG. Because the author field is blank I read the source record: the file is a JPEG of NARA 181393, and the National Archives catalog gives creator 'President (1977-1981 : Carter). White House Staff Photographers', use restriction 'Unrestricted'. Looked at the 1920 px copy: Sadat, Carter and Begin clasping hands in the East Room, a U.S. flag at the right edge. In focus; film dust specks are visible but minor; no watermark, no seal. The Commons file name says 'sign', but the picture shows the handshake after the signing, at the White House, so I rewrote the caption to say that."
+  "checked": "API: LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Restrictions empty, Artist 'Not know or unknown', Credit NARA, 17 September 1978, 2256x1482 JPEG. Because the author field is blank I read the source record: the file is a JPEG of NARA 181393, and the National Archives catalog gives creator 'President (1977-1981 : Carter). White House Staff Photographers', use restriction 'Unrestricted'. Looked at the 1920 px copy: Sadat, Carter and Begin clasping hands in the East Room, a U.S. flag at the right edge. In focus; film dust specks are visible but minor; no watermark, no seal. The Commons file name says 'sign', but the picture shows the handshake after the signing, at the White House, so I rewrote the caption to say that.",
+  "answer": "Chief diplomat"
  },
  {
   "id": 42,
@@ -911,11 +912,11 @@
   "license": "Public domain",
   "basis": "Harris & Ewing studio portrait of the Taft Court, made between 1925 and early 1930 (copyright expired); the studio gave its collection to the Library of Congress in 1955, which lists no known restrictions.",
   "credit": "Harris & Ewing, Library of Congress",
-  "caption": "The nine Supreme Court justices under Chief Justice Taft, late 1920s. Five sit in front.",
+  "caption": "The nine Supreme Court justices under Chief Justice Taft, between 1925 and 1930. Five sit in front.",
   "fits": "The answer is 'Five', a majority of nine. The portrait shows all nine justices with exactly five seated in front and four standing, so five of nine is easy to see. All are long dead.",
   "problem": "",
   "verdict": "kept",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist Harris & Ewing, 9218x7374 JPEG, category PD-Harris-Ewing. LoC record 2016861496: title 'Supreme Court, U.S. Taft Court', 'No known restrictions on publication', 'Gift; Harris & Ewing, Inc. 1955', date given only as 1905-1945. The membership named on Commons (Stone joined March 1925, Taft left February 1930) fixes it to 1925-1930, and works published through 1930 are now out of copyright. Looked at the 1920 px copy: nine men in robes, five seated and four standing (counted), Taft in the centre and Holmes second from left are recognisable. Sharp, no border, no text. I changed the caption from 'about 1925' to 'late 1920s' because the exact year is not known."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist Harris & Ewing, 9218x7374 JPEG, category PD-Harris-Ewing. LoC record 2016861496: title 'Supreme Court, U.S. Taft Court', 'No known restrictions on publication', 'Gift; Harris & Ewing, Inc. 1955', date given only as 1905-1945. The membership named on Commons (Stone joined March 1925, Taft left February 1930) fixes it to 1925-1930, and works published through 1930 are now out of copyright. Looked at the 1920 px copy: nine men in robes, five seated and four standing (counted), Taft in the centre and Holmes second from left are recognisable. Sharp, no border, no text. I changed the caption from 'about 1925' to 'late 1920s' because the exact year is not known. 2026-09-29 audit: the date range follows from who is in the photo (Stone joined in March 1925; Taft left in February 1930)."
  },
  {
   "id": 55,
@@ -1068,7 +1069,7 @@
   "width": 2502,
   "height": 1898,
   "license": "Public domain",
-  "basis": "News photograph of about 1917 from the National Photo Company, issued with a printed news caption, so published before 1930 and out of copyright; loc.gov item 97510725 says no known restrictions.",
+  "basis": "Press print with a newspaper caption in the National Photo Company Collection, about 1917 (loc.gov item 97510725). The Library of Congress, which acquired the collection in 1947, states: \"There are no known restrictions on the photographs in the National Photo Company Collection.\" Publication before 1930 is likely but not proven; no printed copy has been found.",
   "credit": "National Photo Company Collection, Library of Congress",
   "caption": "Women vote at a polling place, probably in New York City, about 1917.",
   "fits": "Shows the accepted answer 'Women and men can vote': a woman puts her ballot into a glass ballot box while two others look on. Calm and dignified.",
@@ -1086,7 +1087,7 @@
   "height": 1748,
   "license": "CC0",
   "basis": "Own photograph by Wikimedia Commons user Ammodramus, taken on 30 April 2013 and released by the author under CC0 (public domain dedication).",
-  "credit": "Ammodramus, Wikimedia Commons, CC0",
+  "credit": "Ammodramus, Wikimedia Commons",
   "caption": "The jury box in the Webster County Courthouse, Red Cloud, Nebraska.",
   "fits": "Serving on a jury is one of the three things the question reserves for citizens. The picture shows twelve empty jury chairs and nothing else, so the link to the answer 'U.S. citizens' is easy to explain.",
   "problem": "The photographer is a private person, so the CC0 release is the whole basis. Taken with a 2004-era camera, so slightly soft when enlarged.",
@@ -1153,7 +1154,7 @@
   "width": 7162,
   "height": 5537,
   "license": "Public domain",
-  "basis": "Photograph by the National Photo Company, dated about 1920 by the Library of Congress (https://www.loc.gov/item/2016852098/), which lists no known restrictions on publication; published before 1930, so its copyright has expired.",
+  "basis": "Glass negative in the National Photo Company Collection, dated about 1920 by the Library of Congress (loc.gov item 2016852098). The Library acquired the company's files in 1947 and states: \"There are no known restrictions on the photographs in the National Photo Company Collection.\" No publication before 1930 is documented for this photo.",
   "credit": "National Photo Company, Library of Congress",
   "caption": "Immigrants in an \"Americanization\" class, about 1920. These classes taught English and civics.",
   "fits": "Naturalization is one way to become a citizen; these classes prepared immigrants for it.",
@@ -1163,7 +1164,7 @@
   "crop": [
    60,
    56,
-   1868,
+   1812,
    1428
   ]
  },
@@ -1176,7 +1177,7 @@
   "width": 2502,
   "height": 1898,
   "license": "Public domain",
-  "basis": "News agency print in the National Photo Company Collection, dated about 1917 by the Library of Congress and carrying a press caption, so its U.S. copyright has expired (published before 1930); the Library lists no known restrictions on publication.",
+  "basis": "Press print with a newspaper caption in the National Photo Company Collection, about 1917 (loc.gov item 97510725). The Library of Congress, which acquired the collection in 1947, states: \"There are no known restrictions on the photographs in the National Photo Company Collection.\" Publication before 1930 is likely but not proven; no printed copy has been found.",
   "credit": "National Photo Company Collection, Library of Congress",
   "caption": "A woman drops her ballot into a glass ballot box, about 1917.",
   "fits": "Voting is the first accepted answer. The photo shows the act itself: a ballot going into a glass ballot box while two other women look on. Historical, calm, no living person.",
@@ -1318,7 +1319,8 @@
   "fits": "The words 'No Stamp Act' are large and easy to read, so the picture names one accepted answer (Stamp Act) and shows the anger about taxes. A museum object; a slogan from the 1760s, not current politics. Landscape.",
   "problem": "",
   "verdict": "kept",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist Daderot, Credit Self-photographed, date 2011-01-18, 3159x2275 JPEG. Wikitext: {{PD-self}}, Permission 'Public domain'. The release is believable: the uploader is the photographer and the object is over 250 years old. Confirmed the object in the Smithsonian catalogue: 'No Stamp Act Teapot', NMAH 2006.0229.01ab, made in England 1766-1770. Looked at the 1920 px copy: cream teapot with black lettering 'No Stamp Act', sharp, no watermark; a display wire and case wall are visible behind it. Caption date widened to match the museum record."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist Daderot, Credit Self-photographed, date 2011-01-18, 3159x2275 JPEG. Wikitext: {{PD-self}}, Permission 'Public domain'. The release is believable: the uploader is the photographer and the object is over 250 years old. Confirmed the object in the Smithsonian catalogue: 'No Stamp Act Teapot', NMAH 2006.0229.01ab, made in England 1766-1770. Looked at the 1920 px copy: cream teapot with black lettering 'No Stamp Act', sharp, no watermark; a display wire and case wall are visible behind it. Caption date widened to match the museum record.",
+  "answer": "Stamp Act"
  },
  {
   "id": 78,
@@ -1369,24 +1371,31 @@
   "fits": "Shows one accepted answer, the British surrender at Yorktown, which the explanation in why.json also names. A calm, formal scene with flags and officers, no fighting. Landscape.",
   "problem": "",
   "verdict": "kept",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist John Trumbull, Credit aoc.gov Rotunda paintings page, date '1820, placed 1826', 3000x1978 JPEG. Wikitext: permission {{PD-1923}}, location Rotunda of the US Capitol. Looked at the 1920 px copy: the Trumbull painting with French troops left, Americans right, a British officer in red at the centre; sharp, no frame, no watermark, no fighting. Caption is careful: it says 'British surrender', which is right, since Cornwallis himself was not present."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist John Trumbull, Credit aoc.gov Rotunda paintings page, date '1820, placed 1826', 3000x1978 JPEG. Wikitext: permission {{PD-1923}}, location Rotunda of the US Capitol. Looked at the 1920 px copy: the Trumbull painting with French troops left, Americans right, a British officer in red at the centre; sharp, no frame, no watermark, no fighting. Caption is careful: it says 'British surrender', which is right, since Cornwallis himself was not present.",
+  "answer": "(Battle of) Yorktown (British surrender at Yorktown)"
  },
  {
   "id": 81,
   "found": true,
   "file_title": "File:The Thirteen Original Colonies in 1774 (McConnell's historical maps of the United States).jpg",
   "page_url": "https://commons.wikimedia.org/wiki/File:The_Thirteen_Original_Colonies_in_1774_(McConnell%27s_historical_maps_of_the_United_States).jpg",
-  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/The_Thirteen_Original_Colonies_in_1774_%28McConnell%27s_historical_maps_of_the_United_States%29.jpg/1920px-The_Thirteen_Original_Colonies_in_1774_%28McConnell%27s_historical_maps_of_the_United_States%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/The_Thirteen_Original_Colonies_in_1774_%28McConnell%27s_historical_maps_of_the_United_States%29.jpg",
   "width": 3313,
   "height": 2393,
   "license": "Public domain",
   "basis": "Published in Chicago in 1919 by the McConnell Map Company, so U.S. copyright has expired (before 1930); scan from the Library of Congress.",
   "credit": "Library of Congress",
-  "caption": "School map from 1919: the thirteen colonies line the Atlantic coast north of Florida.",
+  "caption": "The thirteen colonies in 1774, on a 1919 school map.",
   "fits": "The title 'The Thirteen Original Colonies' is printed in large letters and each colony is coloured and named along the east coast. Landscape, clean scan. It is the weakest picture in the group: see the warning in 'checked'.",
   "problem": "",
   "verdict": "kept",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, date 1919, Credit loc.gov g3701sm.gct00482 sp=15, 3313x2393 JPEG. Wikitext: {{PD-US-expired}}. Confirmed on loc.gov: 'McConnell's historical maps of the United States', Chicago, McConnell Map Co., 1919, no rights advisory. Looked at the 1920 px copy and at a close crop of the east coast: all thirteen colonies are named, no archive stamp; the tiny printed line 'Copyright by James McConnell' and sheet number 15 belong to the 1919 print. WARNING: the map shows the whole continent. The biggest labels are Spanish Possessions, Province of Quebec, Indian Country, Oregon Country, West Florida and East Florida, none of which is an accepted answer, and the colony names are small. A learner could think Florida or Quebec was one of the thirteen. I rewrote the caption to point at the right place, and I recommend that the slide shows only the east coast (about x 58-100 percent, y 15-80 percent of the image). I looked for a better map and rejected: the Mitchell 1876 map (uploader claims CC BY-SA on the scan), the Capitol corridor mural (painted 1993-94 by a private studio, and it carries a logo), the West Point campaign map (department emblem, also labels both Floridas in large type), Shepherd's atlas maps (crowded, printed maker's mark), and several schoolbook maps that show other periods. If the slide cannot crop, removing this picture is a fair choice."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, date 1919, Credit loc.gov g3701sm.gct00482 sp=15, 3313x2393 JPEG. Wikitext: {{PD-US-expired}}. Confirmed on loc.gov: 'McConnell's historical maps of the United States', Chicago, McConnell Map Co., 1919, no rights advisory. Looked at the 1920 px copy and at a close crop of the east coast: all thirteen colonies are named, no archive stamp; the tiny printed line 'Copyright by James McConnell' and sheet number 15 belong to the 1919 print. WARNING: the map shows the whole continent. The biggest labels are Spanish Possessions, Province of Quebec, Indian Country, Oregon Country, West Florida and East Florida, none of which is an accepted answer, and the colony names are small. A learner could think Florida or Quebec was one of the thirteen. I rewrote the caption to point at the right place, and I recommend that the slide shows only the east coast (about x 58-100 percent, y 15-80 percent of the image). I looked for a better map and rejected: the Mitchell 1876 map (uploader claims CC BY-SA on the scan), the Capitol corridor mural (painted 1993-94 by a private studio, and it carries a logo), the West Point campaign map (department emblem, also labels both Floridas in large type), Shepherd's atlas maps (crowded, printed maker's mark), and several schoolbook maps that show other periods. If the slide cannot crop, removing this picture is a fair choice. 2026-09-29 audit: cropped from the full-size original to the colonies, so Florida, Quebec's full label and 'Indian Country' no longer lead a learner to a wrong answer.",
+  "crop": [
+   2386,
+   432,
+   3140,
+   1695
+  ]
  },
  {
   "id": 82,
@@ -1454,7 +1463,8 @@
   "fits": "The best known portrait of Franklin, painted in Paris while he represented the United States in France, which matches the 'U.S. diplomat' answer and the explanation in why.json. Very sharp. Upright, close to square.",
   "problem": "",
   "verdict": "kept",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist Joseph-Siffred Duplessis, Credit npg.si.edu NPG.87.43, DateTimeOriginal 1785, 5679x6992 JPEG. Wikitext: {{PD-Art|PD-old-100-expired}}. Confirmed in the Smithsonian catalogue: NPG.87.43, 'Benjamin Franklin', Joseph Siffred Duplessis, c. 1785, place Paris, rights CC0. So the file name's 1778 is wrong and the caption's 'about 1785' is right. Looked at the 1920 px copy: the grey-coat Duplessis portrait, very sharp, no frame, no watermark. Caption now names the diplomat role, which is an accepted answer."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, Artist Joseph-Siffred Duplessis, Credit npg.si.edu NPG.87.43, DateTimeOriginal 1785, 5679x6992 JPEG. Wikitext: {{PD-Art|PD-old-100-expired}}. Confirmed in the Smithsonian catalogue: NPG.87.43, 'Benjamin Franklin', Joseph Siffred Duplessis, c. 1785, place Paris, rights CC0. So the file name's 1778 is wrong and the caption's 'about 1785' is right. Looked at the 1920 px copy: the grey-coat Duplessis portrait, very sharp, no frame, no watermark. Caption now names the diplomat role, which is an accepted answer.",
+  "answer": "U.S. diplomat"
  },
  {
   "id": 86,
@@ -1476,19 +1486,19 @@
  {
   "id": 87,
   "found": true,
-  "file_title": "File:Thomas Jefferson by Rembrandt Peale, 1800.jpg",
-  "page_url": "https://commons.wikimedia.org/wiki/File:Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg",
-  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/1920px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "width": 2512,
-  "height": 2996,
+  "file_title": "File:Gilbert Stuart - Thomas Jefferson - Google Art Project.jpg",
+  "page_url": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_-_Thomas_Jefferson_-_Google_Art_Project.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Gilbert_Stuart_-_Thomas_Jefferson_-_Google_Art_Project.jpg/1920px-Gilbert_Stuart_-_Thomas_Jefferson_-_Google_Art_Project.jpg",
+  "width": 6509,
+  "height": 8106,
   "license": "Public domain",
-  "basis": "Painted by Rembrandt Peale (died 1860) in 1800, so copyright has expired in the United States; this is a faithful photo of that flat painting, which hangs in the White House collection.",
-  "credit": "Rembrandt Peale, White House collection",
-  "caption": "Thomas Jefferson, painted by Rembrandt Peale in 1800.",
-  "fits": "A clear, well-known likeness of Jefferson, painted the year before he became the third president, so learners can connect the face with the name in the answer.",
+  "basis": "Painted by Gilbert Stuart (died 1828) in the early 1800s, so copyright expired long ago; a faithful photograph of the flat painting (Google Art Project). The painting is owned by the National Portrait Gallery, Smithsonian, and Monticello.",
+  "credit": "Gilbert Stuart, National Portrait Gallery and Monticello",
+  "caption": "Thomas Jefferson, the third president, painted by Gilbert Stuart.",
+  "fits": "A different portrait from question 78, so the two slides do not repeat.",
   "problem": "",
-  "verdict": "kept",
-  "checked": "Commons API: 2512 x 2996, image/jpeg, LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Restrictions empty, Artist Rembrandt Peale, Credit White House Historical Association, date 1800. Wikitext has PD-Art / PD-old-auto-expired, death year 1860. Looked at the 1920 px copy: it is the 1800 Peale portrait (dark coat, white cravat, not the 1805 fur-collar version), sharp, no frame, no text. Upright format (about 5:6). Not a living person, nothing partisan. No identical file in other groups' downloads."
+  "verdict": "replaced 2026-09-29",
+  "checked": "2026-09-29 audit found the same Peale portrait on questions 78 and 87. Commons API: LicenseShortName Public domain, Copyrighted False, no restrictions, date 'between 1805 and 1818'. Looked at the 1920 px copy: the painting only, no frame text or watermark."
  },
  {
   "id": 88,
@@ -1510,19 +1520,20 @@
  {
   "id": 89,
   "found": true,
-  "file_title": "File:Alexander Hamilton portrait by John Trumbull 1806.jpg",
-  "page_url": "https://commons.wikimedia.org/wiki/File:Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg",
-  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg/1920px-Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "width": 2532,
-  "height": 3000,
+  "file_title": "File:First Bank of the United States, Philadelphia, Pennsylvania LCCN2011633532 (edited).jpg",
+  "page_url": "https://commons.wikimedia.org/wiki/File:First_Bank_of_the_United_States,_Philadelphia,_Pennsylvania_LCCN2011633532_(edited).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/First_Bank_of_the_United_States%2C_Philadelphia%2C_Pennsylvania_LCCN2011633532_%28edited%29.jpg/1920px-First_Bank_of_the_United_States%2C_Philadelphia%2C_Pennsylvania_LCCN2011633532_%28edited%29.jpg",
+  "width": 6815,
+  "height": 5305,
   "license": "Public domain",
-  "basis": "Painted by John Trumbull (died 1843) about 1805, so copyright has expired in the United States; this is a faithful photo of that flat painting in the White House collection.",
-  "credit": "John Trumbull, White House collection",
-  "caption": "Alexander Hamilton, painted by John Trumbull about 1805.",
-  "fits": "The standard likeness of Hamilton, the first Secretary of the Treasury, and the portrait type people know from the ten-dollar bill. Clean, no frame or text.",
+  "basis": "Photograph by Carol M. Highsmith, between 1980 and 2006, from the archive she gave to the Library of Congress (item 2011633532), which states no known restrictions on publication; Highsmith dedicated the archive to the public.",
+  "credit": "Carol M. Highsmith, Library of Congress",
+  "caption": "The First Bank of the United States in Philadelphia, which Hamilton helped establish.",
+  "fits": "Shows an accepted answer: 'Helped establish the First Bank of the United States'.",
   "problem": "",
-  "verdict": "kept",
-  "checked": "Commons API: 2532 x 3000, image/jpeg, LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Restrictions empty, Artist John Trumbull, date 1805. Wikitext: PD-Art / PD-old-100 plus PD-US, categories place it in the White House collection. The file name says 1806 but the White House Historical Association dates the painting about 1805, so the caption is right. Looked at the 1920 px copy: Hamilton facing left, sharp, no text. Passes every rule for this group. One warning: the identical file (same checksum) is also the pick for question 83 in the neighbouring group; see notes for a verified backup."
+  "verdict": "replaced 2026-09-29",
+  "checked": "2026-09-29 audit found the same Trumbull portrait of Hamilton on questions 83 and 89. Commons API: LicenseShortName Public domain, Copyrighted False, no restrictions. Looked at the 1920 px copy: the building front, no watermark; the carved eagle on the pediment is architecture, not a seal.",
+  "answer": "Helped establish the First Bank of the United States"
  },
  {
   "id": 90,
@@ -1590,7 +1601,8 @@
   "fits": "Shows one of the listed events, the surrender at Appomattox, which the explanation gives as the end of the war. Calm indoor scene, landscape, no violence.",
   "problem": "",
   "verdict": "kept",
-  "checked": "Commons API: 3000 x 2127, image/jpeg, LicenseShortName 'CC0', License 'cc0', Restrictions empty, Artist 'Chappel, Alonzo', date 'ca. 1870', Credit Smithsonian Open Access. (Copyrighted shows 'True' only because CC0 is a waiver.) The museum's own page for accession 1981.139 says the media is in the public domain, free of copyright restrictions. Looked at the 1920 px copy and at an enlarged strip of the bottom edge: Lee with pen at the table, Grant standing, staff officers behind; no frame, no lettering, no watermark. Slightly dark overall, with minor paint wear at the very bottom edge. No identical file in other groups' downloads."
+  "checked": "Commons API: 3000 x 2127, image/jpeg, LicenseShortName 'CC0', License 'cc0', Restrictions empty, Artist 'Chappel, Alonzo', date 'ca. 1870', Credit Smithsonian Open Access. (Copyrighted shows 'True' only because CC0 is a waiver.) The museum's own page for accession 1981.139 says the media is in the public domain, free of copyright restrictions. Looked at the 1920 px copy and at an enlarged strip of the bottom edge: Lee with pen at the table, Grant standing, staff officers behind; no frame, no lettering, no watermark. Slightly dark overall, with minor paint wear at the very bottom edge. No identical file in other groups' downloads.",
+  "answer": "(Surrender at) Appomattox"
  },
  {
   "id": 94,
@@ -1998,7 +2010,8 @@
   "caption": "Taos Pueblo, New Mexico, home of the Taos Pueblo people, photographed in 1941.",
   "fits": "'Pueblo' is one of the accepted answers. The picture shows a real Pueblo community that is still lived in, with its own architecture, so it is respectful and free of costume or stereotype. Landscape and very sharp.",
   "problem": "",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, image/jpeg, 3000x2378, Artist Ansel Adams, date 1941. Wikitext: PD-USGov-NPS, NARA 519984. National Archives catalog queried directly: useRestriction Unrestricted, local id 79-AAQ-2, title 'Taos Pueblo National Historic Landmark, New Mexico, 1941'. archives.gov/research/ansel-adams says the Park Service commissioned Adams in 1941 and that most of the photographs are public domain; the stated exception is eight Yosemite pictures in another series (79-G). Viewed the 1920 px copy and a corner crop: the multi-storey adobe houses with mountains behind, not the church; no text. A thin white edge of the print shows at the left and bottom."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, image/jpeg, 3000x2378, Artist Ansel Adams, date 1941. Wikitext: PD-USGov-NPS, NARA 519984. National Archives catalog queried directly: useRestriction Unrestricted, local id 79-AAQ-2, title 'Taos Pueblo National Historic Landmark, New Mexico, 1941'. archives.gov/research/ansel-adams says the Park Service commissioned Adams in 1941 and that most of the photographs are public domain; the stated exception is eight Yosemite pictures in another series (79-G). Viewed the 1920 px copy and a corner crop: the multi-storey adobe houses with mountains behind, not the church; no text. A thin white edge of the print shows at the left and bottom.",
+  "answer": "Pueblo"
  },
  {
   "id": 118,
@@ -2015,7 +2028,8 @@
   "caption": "Astronaut Buzz Aldrin salutes the U.S. flag on the Moon, Apollo 11, July 1969.",
   "fits": "Illustrates the accepted answer 'Landing on the moon' and matches the explanation, which ends with the 1969 landing. The flag, a leg of the lunar module and the footprints are all in the frame.",
   "problem": "",
-  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, image/jpeg, 3929x3967, Artist NASA / Neil A. Armstrong, date 1969-07-20, source NASA Apollo 11 Image Library. Wikitext: PD-USGov-NASA. Viewed the 1920 px copy: astronaut in white suit facing the flag, lunar module leg at left, footprints in front, sharp, no watermark; the small crosses are the camera's own marks. Buzz Aldrin is alive (born 1930) but has never held political office and his face is hidden by the visor, so the living-politician rule is not broken. Nearly square, which the rules allow."
+  "checked": "API: LicenseShortName Public domain, License pd, Copyrighted False, Restrictions empty, image/jpeg, 3929x3967, Artist NASA / Neil A. Armstrong, date 1969-07-20, source NASA Apollo 11 Image Library. Wikitext: PD-USGov-NASA. Viewed the 1920 px copy: astronaut in white suit facing the flag, lunar module leg at left, footprints in front, sharp, no watermark; the small crosses are the camera's own marks. Buzz Aldrin is alive (born 1930) but has never held political office and his face is hidden by the visor, so the living-politician rule is not broken. Nearly square, which the rules allow.",
+  "answer": "Landing on the moon"
  },
  {
   "id": 119,
@@ -2042,7 +2056,7 @@
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/HIghsmith_2017_LOC_Statue_of_Liberty_NY_Harbor.jpg/1920px-HIghsmith_2017_LOC_Statue_of_Liberty_NY_Harbor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "width": 2172,
   "height": 1448,
-  "license": "CC0",
+  "license": "Public domain",
   "basis": "Photographed on 24 August 2017 by Carol M. Highsmith and given to the Library of Congress with the rights dedicated to the public (LOC highsm.45303, no known restrictions on publication), so it is dedicated to the public domain by the author.",
   "credit": "Carol M. Highsmith, Library of Congress",
   "caption": "The Statue of Liberty on Liberty Island in New York Harbor, with Manhattan behind.",
@@ -2077,7 +2091,7 @@
   "width": 5040,
   "height": 3360,
   "license": "Public domain",
-  "basis": "NASA photograph by Ben Smegelsky, Kennedy Space Center, 27 October 2020 (NASA ID KSC-20201027-PH-JBS02_0072), a work of the U.S. federal government.",
+  "basis": "NASA photograph KSC-20201027-PH-JBS02_0072, credited \"NASA/Ben Smegelsky\", taken 27 October 2020 at Kennedy Space Center and released by NASA. The photographer may be a NASA contractor, so this is not claimed as a federal-employee work under 17 U.S.C. 105. NASA names no other copyright holder on it, and NASA's media guidelines (https://www.nasa.gov/nasa-brand-center/images-and-media/) state that NASA images \"generally are not subject to copyright in the United States\".",
   "credit": "NASA / Ben Smegelsky",
   "caption": "The 50-star U.S. flag painted on NASA's Vehicle Assembly Building in Florida.",
   "fits": "The flag is flat and sharp, so a learner can count all 50 stars, one for each state; the 13 stripes are also complete.",
@@ -2151,7 +2165,8 @@
   "fits": "Thanksgiving Day is one of the listed holidays and the print names it in its own title. It is a peaceful family scene with no politicians, no religious symbols and no Pilgrim or Indian imagery.",
   "problem": "",
   "verdict": "kept",
-  "checked": "Commons API: LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Restrictions empty, Artist 'John Schutler after George Henry Durrie', date 1867, 4000x2636 image/jpeg; page tags CC0 plus PD-Art (PD-old-auto, death year 1863); uploaded in the National Gallery of Art donation project, accession 1985.64.163. nga.gov refused my request (HTTP 403), so I confirmed the date from the print itself: the line under the picture reads 'Entered according to Act of Congress AD 1867 by Currier & Ives'. Looked at the 1920 px copy: sharp, the title and publisher line are part of the 1867 print, no archive text or watermark. The researcher's 'family reunion' is an interpretation, so the caption now says only what is seen."
+  "checked": "Commons API: LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Restrictions empty, Artist 'John Schutler after George Henry Durrie', date 1867, 4000x2636 image/jpeg; page tags CC0 plus PD-Art (PD-old-auto, death year 1863); uploaded in the National Gallery of Art donation project, accession 1985.64.163. nga.gov refused my request (HTTP 403), so I confirmed the date from the print itself: the line under the picture reads 'Entered according to Act of Congress AD 1867 by Currier & Ives'. Looked at the 1920 px copy: sharp, the title and publisher line are part of the 1867 print, no archive text or watermark. The researcher's 'family reunion' is an interpretation, so the caption now says only what is seen.",
+  "answer": "Thanksgiving Day"
  },
  {
   "id": 127,
