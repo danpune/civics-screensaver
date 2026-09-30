@@ -7,6 +7,7 @@
 Needs Pillow, to make the pictures smaller. The page it writes holds everything and needs no network.
 """
 import json, os, re, shutil
+from datetime import date
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -16,7 +17,10 @@ WIDE = 1440   # longest side of a picture, in pixels
 def load(name):
     return json.load(open(os.path.join(SITE, name), encoding="utf-8"))
 
-questions, why, federal = load("questions.json"), load("why.json")["why"], load("officials.json")["parts"]["federal"]
+questions, why, officials = load("questions.json"), load("why.json")["why"], load("officials.json")
+federal = officials["parts"]["federal"]   # the names that change: questions 30, 38, 39 and 57
+day = date.fromisoformat(officials["changed"])
+CHECKED = "Names from uscis.gov/citizenship/testupdates, checked %s %d, %d." % (day.strftime("%b"), day.day, day.year)
 pictures = json.load(open(os.path.join(HERE, "pictures.json"), encoding="utf-8"))
 
 def need(q):   # how many answers the question asks for, as on the site
@@ -30,10 +34,10 @@ os.makedirs(os.path.join(out, "img"))
 slides = []
 for q in questions:
     i, n = str(q["id"]), need(q["q"])
-    answers = [federal[i][0]] if i in federal else q["a"]
+    answers = federal[i] if i in federal else q["a"]   # every form of the name that USCIS accepts
     shown = answers[:max(n, 4)]
     s = {"id": q["id"], "sec": q["sec"], "star": bool(q.get("star")), "q": q["q"], "need": n,
-         "a": shown, "more": len(answers) - len(shown), "note": q.get("note", ""), "why": why[i]["w"]}
+         "a": shown, "more": len(answers) - len(shown), "note": CHECKED if i in federal else q.get("note", ""), "why": why[i]["w"]}
     p = pictures.get(i)
     if p:
         im = Image.open(os.path.join(HERE, "pictures", p["file"])).convert("RGB")

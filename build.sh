@@ -9,7 +9,7 @@ cd "${0:A:h}"
 
 NAME="Civics Test"
 EXE="CivicsSaver"
-VERSION="1.0"
+VERSION="1.1"
 MIN_OS="13.0"
 OUT="build/$NAME.saver"
 
@@ -26,6 +26,7 @@ lipo -create "build/$EXE-arm64" "build/$EXE-x86_64" -output "$OUT/Contents/MacOS
 rm -f build/$EXE-arm64 build/$EXE-x86_64
 cp -R web "$OUT/Contents/Resources/web"
 cp Resources/thumbnail.png Resources/thumbnail@2x.png "$OUT/Contents/Resources/"   # the small picture in System Settings
+cp LICENSE CREDITS.md "$OUT/Contents/Resources/"   # the licence and the picture sources travel with every copy
 
 cat > "$OUT/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,7 +41,7 @@ cat > "$OUT/Contents/Info.plist" <<PLIST
   <key>CFBundleVersion</key><string>$VERSION</string>
   <key>LSMinimumSystemVersion</key><string>$MIN_OS</string>
   <key>NSPrincipalClass</key><string>CivicsSaverView</string>
-  <key>NSHumanReadableCopyright</key><string>Unofficial study aid. Not made by USCIS.</string>
+  <key>NSHumanReadableCopyright</key><string>Unofficial study aid. Not made by USCIS. Not legal advice. Code: MIT licence. Pictures: public domain or CC0, see CREDITS.md.</string>
 </dict></plist>
 PLIST
 
@@ -57,5 +58,5 @@ if [[ " $* " == *" install "* ]]; then
   mkdir -p "$HOME/Library/Screen Savers"
   rm -rf "$HOME/Library/Screen Savers/$NAME.saver"
   cp -R "$OUT" "$HOME/Library/Screen Savers/"
-  echo "Installed. Choose it in System Settings, Screen Saver, Other."
+  echo "Installed. Choose it in System Settings: Wallpaper, Screen Saver..., Other, Show All. On macOS 13 to 15: Screen Saver, Other."
 fi

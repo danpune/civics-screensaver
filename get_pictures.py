@@ -4,7 +4,7 @@
   python3 get_pictures.py picks.json
 
 picks.json is a list of pictures, one per question: id, found, file_title, page_url, image_url, license, basis,
-credit, caption. Every picture is public domain or CC0; the licence of each was checked twice before it got here.
+credit, caption. Every picture is public domain or CC0; the licence of each was checked before it got here (notes in "checked").
 Stdlib only. A picture that is already in pictures/ is not downloaded again.
 """
 import json, os, sys, time, urllib.request
@@ -33,11 +33,17 @@ for p in sorted(picks, key=lambda p: p["id"]):
         time.sleep(1)   # be gentle with Wikimedia's servers
     manifest[str(p["id"])] = {"file": name, "caption": p["caption"], "credit": p["credit"],
                               "source": p["page_url"], "license": p["license"], "basis": p["basis"]}
-    credits.append("| %d | %s | %s | %s | [file page](%s) |" % (p["id"], p["caption"], p["credit"], p["license"], p["page_url"]))
+    credits.append("| %d | %s | %s | %s | %s | [file page](%s) |" % (p["id"], p["caption"], p["credit"], p["license"], p["basis"], p["page_url"]))
 
 json.dump(manifest, open(os.path.join(HERE, "pictures.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 open(os.path.join(HERE, "CREDITS.md"), "w", encoding="utf-8").write(
-    "# Picture credits\n\nEvery picture is in the public domain or released as CC0. Each was found on Wikimedia Commons and its "
-    "licence was checked by two separate reviewers.\n\n| Question | Picture | Credit | Licence | Source |\n|---|---|---|---|---|\n"
+    "# Picture credits\n\nEvery picture is in the public domain or released as CC0. Each was found on Wikimedia Commons, and its "
+    "licence record there was checked before the picture was added. The notes of each check are in picks.json (field \"checked\"). "
+    "The checks were made with automated tools; this is a careful check, not a legal opinion. Where a Commons page shows a different "
+    "date, author or licence tag, this list follows the record of the archive that holds the original.\n\n"
+    "Pictures credited to the Architect of the Capitol are in the public domain; the agency says so itself: \"These images are in "
+    "the public domain\" (https://www.aoc.gov/image-terms). The agency asks that they not be used for advertising or to imply "
+    "endorsement. This free study aid is not endorsed by the Architect of the Capitol or the United States Congress.\n\n"
+    "| Question | Picture | Credit | Licence | Why it is free | Source |\n|---|---|---|---|---|---|\n"
     + "\n".join(credits) + "\n")
 print("%d pictures, pictures.json and CREDITS.md written" % len(manifest))

@@ -133,7 +133,7 @@
   "credit": "Architect of the Capitol",
   "source": "https://commons.wikimedia.org/wiki/File:U.S._Capitol_Dome_(51845060475).jpg",
   "license": "Public domain",
-  "basis": "Official photograph by staff of the Architect of the Capitol, a federal agency, taken 26 January 2022; a U.S. federal government work."
+  "basis": "Official photograph by staff of the Architect of the Capitol, a federal agency, taken 26 January 2022; a work of the U.S. federal government (Commons tag PD-USGov-Congress-AOC)."
  },
  "19": {
   "file": "019.jpg",
@@ -141,7 +141,7 @@
   "credit": "Architect of the Capitol",
   "source": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_-_west_front.jpg",
   "license": "Public domain",
-  "basis": "Photograph by the Architect of the Capitol, a federal agency, 1997, taken from aoc.gov; a U.S. federal government work."
+  "basis": "Photograph by the Architect of the Capitol, a federal agency, 1997; a U.S. federal government work. The Wikimedia Commons file (3000 x 1556) is a cropped version of the original (3000 x 2400) published on aoc.gov, archived at https://web.archive.org/web/20070228191918/http://www.aoc.gov/cc/photo-gallery/upload/72350_hr_1997.jpg"
  },
  "20": {
   "file": "020.jpg",
@@ -165,7 +165,7 @@
   "credit": "Architect of the Capitol",
   "source": "https://commons.wikimedia.org/wiki/File:Senate_Wing_of_the_U.S._Capitol_(51845062495).jpg",
   "license": "Public domain",
-  "basis": "Official photograph by staff of the Architect of the Capitol, a federal agency, taken 26 January 2022; a U.S. federal government work."
+  "basis": "Official photograph by staff of the Architect of the Capitol, a federal agency, taken 26 January 2022; a work of the U.S. federal government (Commons tag PD-USGov-Congress-AOC)."
  },
  "23": {
   "file": "023.jpg",
@@ -173,7 +173,7 @@
   "credit": "Architect of the Capitol",
   "source": "https://commons.wikimedia.org/wiki/File:Sunset_Russell_Senate_Office_Building_(11996844403).jpg",
   "license": "Public domain",
-  "basis": "Official photograph by staff of the Architect of the Capitol, a federal agency, taken 16 January 2014; a U.S. federal government work."
+  "basis": "Official photograph by staff of the Architect of the Capitol, a federal agency, taken 16 January 2014; a work of the U.S. federal government (Commons tag PD-USGov-Congress-AOC)."
  },
  "24": {
   "file": "024.jpg",
@@ -306,7 +306,7 @@
  "40": {
   "file": "040.jpg",
   "caption": "Vice President Harry Truman takes the oath as President after Roosevelt's death, April 12, 1945.",
-  "credit": "Abbie Rowe, Truman Library",
+  "credit": "Abbie Rowe, National Park Service",
   "source": "https://commons.wikimedia.org/wiki/File:Harry_S._Truman_taking_the_oath_of_office.jpg",
   "license": "Public domain",
   "basis": "Photograph by Abbie Rowe, a National Park Service photographer, taken on duty on 12 April 1945 (Truman Library 73-1909); a U.S. federal government work."
@@ -490,7 +490,7 @@
  "63": {
   "file": "063.jpg",
   "caption": "Women vote at a polling place, probably in New York City, about 1917.",
-  "credit": "National Photo Company, Library of Congress",
+  "credit": "National Photo Company Collection, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Three_suffragists_casting_votes_in_New_York_City(%3F)_LCCN97510725.jpg",
   "license": "Public domain",
   "basis": "News photograph of about 1917 from the National Photo Company, issued with a printed news caption, so published before 1930 and out of copyright; loc.gov item 97510725 says no known restrictions."
@@ -529,16 +529,16 @@
  },
  "68": {
   "file": "068.jpg",
-  "caption": "Immigrants in an \"Americanization\" class in 1920. These classes taught English and civics.",
+  "caption": "Immigrants in an \"Americanization\" class, about 1920. These classes taught English and civics.",
   "credit": "National Photo Company, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Americanization_class_LCCN2016852098.jpg",
   "license": "Public domain",
-  "basis": "Photograph by the National Photo Company, 1920, in the Library of Congress collection; published before 1930, so its copyright has expired."
+  "basis": "Photograph by the National Photo Company, dated about 1920 by the Library of Congress (https://www.loc.gov/item/2016852098/), which lists no known restrictions on publication; published before 1930, so its copyright has expired."
  },
  "69": {
   "file": "069.jpg",
   "caption": "A woman drops her ballot into a glass ballot box, about 1917.",
-  "credit": "Library of Congress",
+  "credit": "National Photo Company Collection, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Three_suffragists_casting_votes_in_New_York_City(%3F)_LCCN97510725.jpg",
   "license": "Public domain",
   "basis": "News agency print in the National Photo Company Collection, dated about 1917 by the Library of Congress and carrying a press caption, so its U.S. copyright has expired (published before 1930); the Library lists no known restrictions on publication."
@@ -565,7 +565,7 @@
   "credit": "International Film Service, National Archives",
   "source": "https://commons.wikimedia.org/wiki/File:U.S._draft_lottery.jpg",
   "license": "Public domain",
-  "basis": "News photograph by International Film Service, made and printed in newspapers in June 1918, so its U.S. copyright has expired (published before 1930); held by the National Archives (NAID 533713) with use marked Unrestricted."
+  "basis": "News photograph by International Film Service, made and printed in newspapers in June 1918, so its U.S. copyright has expired (published before 1930); held by the National Archives (NAID 533713, https://catalog.archives.gov/id/533713) with use marked Unrestricted."
  },
  "73": {
   "file": "073.jpg",
@@ -585,7 +585,7 @@
  },
  "75": {
   "file": "075.jpg",
-  "caption": "Olaudah Equiano's 1794 autobiography; he wrote of being taken from Africa and enslaved.",
+  "caption": "Olaudah Equiano's autobiography, 1794 edition; he wrote of being taken from Africa and enslaved.",
   "credit": "Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Frontispiece_and_title_page_from-_The_interesting_narrative_of_the_life_of_Olaudah_Equiano_LCCN98501896.jpg",
   "license": "Public domain",
@@ -650,7 +650,7 @@
  "83": {
   "file": "083.jpg",
   "caption": "Alexander Hamilton, painted by John Trumbull about 1805.",
-  "credit": "White House Collection",
+  "credit": "John Trumbull, White House collection",
   "source": "https://commons.wikimedia.org/wiki/File:Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg",
   "license": "Public domain",
   "basis": "Painted by John Trumbull (died 1843) about 1805, so copyright expired long ago; faithful reproduction of the painting in the White House collection."
@@ -802,7 +802,7 @@
  "102": {
   "file": "102.jpg",
   "caption": "Alice Paul unfurls the ratification banner after Tennessee approved the 19th Amendment, August 1920.",
-  "credit": "Library of Congress",
+  "credit": "National Photo Company, Library of Congress",
   "source": "https://commons.wikimedia.org/wiki/File:Alice_Paul,_National_Chairman_of_the_Woman%27s_Party_160068v.jpg",
   "license": "Public domain",
   "basis": "Photograph by National Photo Co., Washington, dated 18 August 1920 and published in The Suffragist in September 1920 (Library of Congress mnwp.160068), so published before 1930 and expired."

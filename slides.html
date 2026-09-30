@@ -8,7 +8,7 @@
 /* One unit, --u, scales everything: 1% of the width on a 16:9 screen, less on a squarer one. */
 :root{
   --u:min(1vw,1.78vh);
-  --bg:#0b1d36; --ink:#f6f3ea; --muted:rgba(246,243,234,.6); --faint:rgba(246,243,234,.4);
+  --bg:#0b1d36; --ink:#f6f3ea; --muted:rgba(246,243,234,.6);
   --gold:#f0c766; --line:rgba(246,243,234,.16);
   --serif:ui-serif,"New York","Iowan Old Style",Georgia,"Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -22,6 +22,7 @@ body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased
 
 .top{--u:min(1vw,1.78vh);display:flex;justify-content:space-between;align-items:center;gap:calc(var(--u)*2);font-size:calc(var(--u)*1.25);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .top b{color:var(--gold);font-weight:700}
+.top i{font-style:normal;text-transform:none}
 .chip{border:1px solid var(--line);border-radius:99px;padding:.35em .9em;letter-spacing:.08em;white-space:nowrap}
 
 .mid{flex:1;display:flex;align-items:center;min-height:0;margin-top:calc(min(1vw,1.78vh)*2)}
@@ -48,9 +49,9 @@ figure{margin:0;display:flex;flex-direction:column;align-items:center;min-width:
 .pic img{display:block;max-width:100%;max-height:62vh;width:auto;height:auto;transform:scale(1.001);animation:drift 20s ease-out forwards}
 @keyframes drift{to{transform:scale(1.06)}}
 figcaption{font-size:calc(var(--u)*1.08);line-height:1.4;color:var(--muted);margin-top:calc(var(--u)*1.2);text-align:center;max-width:32em}
-figcaption i{display:block;font-style:normal;color:var(--faint)}
+figcaption i{display:block;font-style:normal;color:var(--muted)}
 
-.foot{position:fixed;left:calc(var(--u)*6);right:calc(var(--u)*6);bottom:calc(var(--u)*1.9);display:flex;justify-content:space-between;gap:calc(var(--u)*2);font-size:calc(var(--u)*.98);color:var(--faint);letter-spacing:.03em}
+.foot{position:fixed;left:calc(var(--u)*6);right:calc(var(--u)*6);bottom:calc(var(--u)*1.9);display:flex;justify-content:space-between;gap:calc(var(--u)*2);font-size:calc(var(--u)*1.05);color:var(--muted);letter-spacing:.03em}
 .bar{position:fixed;left:0;bottom:0;height:calc(var(--u)*.32);width:0;background:var(--gold);opacity:.75}
 
 /* a tall screen, or a phone held upright: picture under the text */
@@ -73,7 +74,7 @@ figcaption i{display:block;font-style:normal;color:var(--faint)}
   var QUESTION = 5000;                                  // the question alone, in milliseconds
   function answerTime(s){                               // longer answers stay longer
     var words = (s.a.join(' ') + ' ' + (s.why || '') + ' ' + (s.note || '')).split(/\s+/).length;
-    return Math.max(8000, Math.min(16000, 5000 + words * 260));
+    return Math.max(8000, Math.min(30000, 5000 + words * 260));
   }
 
   function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
@@ -81,7 +82,7 @@ figcaption i{display:block;font-style:normal;color:var(--faint)}
 
   function top(s, n){
     var t = el('div', 'top'), l = el('span');
-    l.appendChild(el('b', '', 'Question ' + s.id)); l.appendChild(document.createTextNode('  ·  ' + s.sec));
+    l.appendChild(el('b', '', 'Question ' + s.id)); l.appendChild(document.createTextNode('  ·  ')); l.appendChild(el('i', '', s.sec.toUpperCase().replace(/(\d)S$/, '$1s')));
     t.appendChild(l);
     if (s.star) t.appendChild(el('span', 'chip', '★ 65/20 list'));
     return t;
@@ -160,8 +161,14 @@ figcaption i{display:block;font-style:normal;color:var(--faint)}
 
   // The four names that change with elections and appointments: take the current ones when there is a connection.
   if (window.fetch) fetch('https://danpune.github.io/greencard-checklist/officials.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(o){
-    var f = o && o.parts && o.parts.federal;
-    if (f) D.forEach(function(s){ var a = f[s.id]; if (a && a[0] && typeof a[0] === 'string' && a[0].length < 60) s.a = [a[0]]; });
+    var f = o && o.parts && o.parts.federal, day = o && /^\d{4}-\d\d-\d\d$/.test(o.changed) ? new Date(o.changed + 'T12:00:00') : null;
+    if (f) D.forEach(function(s){
+      if ([30, 38, 39, 57].indexOf(s.id) < 0 || !Array.isArray(f[s.id])) return;
+      var a = f[s.id].filter(function(x){ return typeof x === 'string' && x.trim() && x.length < 60; }).slice(0, 4);
+      if (!a.length) return;
+      s.a = a; s.more = 0;
+      if (day) s.note = 'Names from uscis.gov/citizenship/testupdates, checked ' + day.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) + '.';
+    });
   }).catch(function(){});
 })();
 </script>

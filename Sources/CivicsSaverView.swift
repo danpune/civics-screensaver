@@ -1,7 +1,8 @@
 import ScreenSaver
 import WebKit
 
-// The whole screensaver is one web page, web/index.html, shown full screen. It needs no network.
+// The whole screensaver is one web page, web/index.html, shown full screen. It works without a network;
+// when online the page fetches one file, the current names of four office holders (see slides.html).
 @objc(CivicsSaverView)
 final class CivicsSaverView: ScreenSaverView {
     private var web: WKWebView?
