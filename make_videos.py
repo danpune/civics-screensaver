@@ -31,7 +31,7 @@ def answer_time(s):   # the screensaver's rule: longer answers stay longer
 
 UNOFFICIAL = "Unofficial study aid. Not made by USCIS or any government agency. Not legal advice."
 def intro(k, h, lines):
-    return {"card": {"k": k, "h": h, "lines": lines}, "sec": 9.0}
+    return {"card": {"k": k, "h": h, "lines": lines}, "sec": 12.0}   # YouTube shows no chapter shorter than 10 seconds
 SOURCES = {"card": {"k": "Sources", "h": "Check the official pages before your interview", "lines": [
     "Questions and answers: USCIS M-1778 (09/25), on uscis.gov.",
     "The names of office holders change: check uscis.gov/citizenship/testupdates.",
@@ -92,17 +92,20 @@ def description(key, plan):
             marks.append((stamp(t), s["chapter"]))
         if key != "full" and s.get("side") == "q":
             qn += 1
-            marks.append((stamp(t), "Question %d: %s" % (qn, Q[s["q"]]["q"][:70])))
+            q = Q[s["q"]]["q"]   # numbered 1 to 20 in this video; the slide shows the official number
+            marks.append((stamp(t), "%d. %s" % (qn, q if len(q) <= 70 else q[:69].rsplit(" ", 1)[0] + "…")))
         if s.get("card", {}).get("k") == "Sources" or s.get("card", {}).get("k", "").startswith("End of"):
             marks.append((stamp(t), "Sources" if key == "full" or key == "star" else "Your score"))
         t += s["sec"]
+    at = [sum(int(x) * 60 ** n for n, x in enumerate(reversed(m[0].split(":")))) for m in marks]
+    assert all(b - a >= 10 for a, b in zip(at, at[1:] + [int(t)])), key + ": YouTube shows no chapter shorter than 10 seconds"
     lines = [TITLES[key], "",
              UNOFFICIAL,
              "This is the 2025 test, for people who file Form N-400 on or after October 20, 2025. If you filed earlier, you take the 2008 test.",
              "Each question is shown for 5 seconds, then the answer, a picture and a short explanation. Pause the video to take more time.", ""]
-    if key == "full":
+    if key in ("full", "star"):
         lines += ["The names of the President, Vice President, Speaker of the House and Chief Justice are as checked on %s. They change; "
-                  "check them at https://www.uscis.gov/citizenship/testupdates before your interview. Four questions depend on where you "
+                  "check them at https://www.uscis.gov/citizenship/testupdates before your interview. Questions that depend on where you "
                   "live (senators, representative, governor, capital): find your own answers at https://%s" % (checked, SITE), ""]
     if key.startswith("test"):
         lines += ["The 20 questions were picked at random from the 128, leaving out the 8 whose answers depend on where you live or on "
